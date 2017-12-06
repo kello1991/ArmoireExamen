@@ -63,12 +63,13 @@ public class LoginController extends Application{
 
           TableController tbl= new TableController();
           tbl.start(tbl.stage);
+            stage= (Stage) anchorPane.getScene().getWindow();
+            stage.close();
         }
         else {
 
             errorLbl.setText("Verifier Votre Nom Utilisateur et Mot De Passe");
-           stage= (Stage) anchorPane.getScene().getWindow();
-           stage.close();
+
         }
 
     }
